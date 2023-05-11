@@ -9,8 +9,10 @@ const ex1 = () => {
 }
 
 const ex2 = () => {
-    // TODO...
-}
+    const array = [12, 55, 2, 22, 11];
+    console.log(minNumber(array));
+ }  
+
 
 const ex3 = () => {
     // TODO...
@@ -30,9 +32,20 @@ const countNumbers = (array) => {
     return numberCounter; 
 }
 
+// ex2
+const minNumber = (array) => {
+    let min = array[0]
+    for (let i = 0; i < array.length; i++){
+        if (array[i] < min) {
+            min = array[i]
+        }
+    }
+    return min;
+}
 
 const main = async () => {
-    ex1();
+    // ex1();
+    ex2();
 }
 
 main();
