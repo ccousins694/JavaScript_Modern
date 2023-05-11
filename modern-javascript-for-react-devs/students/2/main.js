@@ -20,11 +20,16 @@ const ex3 = () => {
 // Your functions here...
 //
 
+// ex1
 const countNumbers = (array) => {
-    let retval = 0;
-    // TODO...
-    return retval;
+    // console.log(array)
+    let numberCounter = 0;
+    for (let i=0; i < array.length; i++) {
+        if(typeof(array[i]) == 'number') numberCounter++;
+    } 
+    return numberCounter; 
 }
+
 
 const main = async () => {
     ex1();
